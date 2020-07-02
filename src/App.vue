@@ -1,28 +1,58 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <nav class="navbar navbar-dark bg-dark mb-5">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logoslash.png" alt="">
+      </a>
+    </nav>
+
+    <List />
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">@ Slashmobility 2018</a>
+        </div>
+      </div>
+    </nav>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import List from './components/List.vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    List
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+*{
+  font-family:"Courier New", Courier, monospace;
 }
+
+.navbar{
+  background-color:black;
+  color:white;
+  padding:15px;
+}
+
+.navbar-header{
+  margin:auto;
+}
+
+a{
+  font-size:0.9em !important;
+}
+
+
 </style>
